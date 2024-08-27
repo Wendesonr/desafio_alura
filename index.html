@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografar e Descriptografar Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Criptografar e Descriptografar Texto</h1>
+        <p class="info">Apenas letras minúsculas são permitidas. Por favor, evite letras maiúsculas e caracteres especiais.</p>
+        <img src="imagen/logotipo.jpg" alt="logotipo">
+       
+        <textarea id="input-text" placeholder="Digite seu texto aqui..." rows="5"></textarea>
+        <div class="buttons">
+            <button onclick="criptografar()">Criptografar</button>
+            <button onclick="descriptografar()">Descriptografar</button>
+        </div>
+        <textarea id="output-text" readonly rows="5" placeholder="Resultado aparecerá aqui..."></textarea>
+        <button class="copy" onclick="copiarTexto()">Copiar Texto</button>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> Wendeson</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // espero que esteja tudo certo
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
